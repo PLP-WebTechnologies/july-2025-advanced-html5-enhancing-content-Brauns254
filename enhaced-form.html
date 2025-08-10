@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhaced HTML5</title>
+</head>
+<body>
+    <header>
+        <nav>
+        <h1>Brian Kiplangat Services</h1>
+        <p>This page showcase my services and application form</p>
+        </nav>
+    </header>
+
+    <!--list-section-->
+    <main>
+        <section class="list-section">
+            <h2>Our Services</h2>
+            <p>We offer variety of services and digital experience</p>
+            <ul>
+                <h3>web development</h3>
+                    <li>Custom website design</li>
+                    <li>responsive layouts</li>
+            </ul>
+            <ul>
+                <h3>Graphic Design</h3>
+                    <li>logo creation</li>
+                    <li>Branding Materials</li>
+            </ul>
+            <ul>
+                <h3>Digital Marketing</h3>
+                    <li>SEO Optimization</li>
+                    <li>Social media campaigns</li>
+            </ul>
+
+            <h3>Task Mangement</h3>
+            <ol>
+                <li>complete project planning</li>
+                <li>Design client Products</li>
+                <li>Marketing Campaign</li>
+            </ol>
+        </section>
+
+        <!--table-->
+        <section class="table-section">
+            <h2>Company Schedule</h2>
+            <table border='2'>
+                <caption><b>Weekly Meeting Schedule</b></caption>
+                <thead>
+                    <tr bgcolor="lightgray">
+                        <th>Day</th>
+                        <th>Time</th>
+                        <th>Topic</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>10:00am</td>
+                        <td>Week plans and Targets</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>2:00pm</td>
+                        <td>Financials</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>2:00pm</td>
+                        <td>weekly recap</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <!--media-->
+    <section class="media">
+        <h2>Media</h2>
+        <figure>
+            <img src="media/My Logo.png" alt="sample-logo" width="300">
+            <figcaption><b>Sample Logo Design</b></figcaption>
+        </figure>
+        <figure>
+            <video controls width="300">
+            <source src="https://videocdn.cdnpk.net/videos/ae4d3146-6a1f-541f-9164-b74b08507d4d/horizontal/previews/clear/large.mp4?token=exp=1754813129~hmac=f8a74cd096d44a1a94455978312892628b69a4ab1d81679018c0dd7a5a877047" type="video/mp4">
+            </video>
+            <figcaption><b>Sample video</b></figcaption>
+        </figure>
+        <figure>
+            <audio controls>
+                <source src="https://freesound.org/s/818497/" type="audio/mp3">
+            </audio>
+            <figcaption><b>Audio Sample</b></figcaption>
+        </figure>
+    </section>
+
+    <!--form-section-->
+    <section>
+        <h2>Subscribe for Newsletter</h2>
+        <form action="submit" method="post">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="name">Enter your full name</label>
+                <input type="text" id="full-name" name="full-name" required minlength="2">
+
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" required placeholder="example@gmail.com">
+
+                <label for="phone-number">Phone Number</label>
+                <input type="text" id="phone-number" name="phone" pattern="[0-9]{10}" placeholder="1234567890">
+            </fieldset>
+
+            <fieldset>
+                <legend>Preference</legend>
+                <label for="intrest">Area of Intrest</label>
+                <select name="interest" id="interest" required>
+                    <option value="">Select an Option</option>
+                    <option value="web">Web Development</option>
+                    <option value="design">Graphic Design</option>
+                    <option value="marketing">Digital Marketing</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Leave a message</legend>
+                <label for="comment">Comment</label>
+                <textarea name="comment" id="comment" rows="4" placeholder="share your toughts"></textarea>
+            </fieldset>
+
+            <input type="submit" value="submit Registration" action="/submit-form">
+        </form>
+    </section>
+    
+</body>
+</html>
